@@ -1,8 +1,29 @@
 aid: nova-benefits
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/nova-benefits.png
 name: Nova Benefits
-description: 'Nova Benefits is a company surfaced as a portfolio company of bessemer-venture-partners
-  and added to the API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: >-
+  Nova Benefits is an India-based employee health and benefits platform that
+  provides group health insurance, super top-up plans, and COVID-19 cover
+  alongside wellness services such as telehealth consultations, mental-wellness
+  support, fitness programs, maternity benefits, and annual health, dental and
+  vision checkups. It gives HR teams an employer dashboard for administering
+  benefits and managing claims, and gives employees web and mobile (iOS/Android)
+  apps to view coverage, book consultations, and file and track claims. The
+  company reports serving 500+ companies covering 200,000+ employees, is
+  ISO 27001:2022 certified and SOC 2 Type II compliant, and operates as an
+  IRDAI-regulated insurance broker. Nova Benefits publishes no public API or
+  developer platform.
 url: https://raw.githubusercontent.com/api-evangelist/nova-benefits/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +33,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Healthcare
+- Insurance
+- Employee Benefits
+- Health Insurance
+- Wellness
+- InsurTech
+- India
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +50,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/nova-benefits-domain-security.yml
+- type: Compliance
+  url: conformance/nova-benefits-conformance.yml
 - type: Website
   url: https://novabenefits.com/
+- type: Blog
+  url: https://blog.getnovaapp.com/
+- type: TermsOfService
+  url: https://www.novabenefits.com/terms
+- type: PrivacyPolicy
+  url: https://www.novabenefits.com/privacy
+- type: Support
+  url: https://www.novabenefits.com/contact-us
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 2
+  pass: local-v1
